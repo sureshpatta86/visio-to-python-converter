@@ -1,0 +1,5 @@
+# Outputs Directory
+
+This directory stores converted XML files temporarily before download.
+
+**Note**: This directory is ignored by git (except for this placeholder file) to prevent committing generated output files.
