@@ -1,0 +1,28 @@
+{
+  "name": "visio-to-xml-converter",
+  "version": "1.0.0",
+  "description": "A web application to convert Microsoft Visio files to XML format",
+  "scripts": {
+    "dev:backend": "cd backend && python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "dev:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "test:backend": "cd backend && python -m pytest",
+    "test:frontend": "cd frontend && npm test",
+    "setup": "./setup.sh",
+    "start": "./start-app.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "visio",
+    "xml",
+    "converter",
+    "fastapi",
+    "react",
+    "typescript"
+  ],
+  "author": "Suresh Patta",
+  "license": "MIT"
+}
